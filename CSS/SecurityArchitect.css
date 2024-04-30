@@ -1,0 +1,311 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #11682b;
+    color: #fff;
+    width: 100%;
+    padding: 3%;
+    text-align: center;
+    background-image: url('https://cdn.wallpapersafari.com/73/36/eL0r5T.jpg'); 
+    background-size: cover;
+    background-position: center; 
+}
+html, body {
+    margin: 0;
+    padding: 0;
+    background-color: rgba(32, 93, 52, 0.293)
+}
+
+.container{
+    background-color: white;
+}
+
+.container p{
+    font-size: large;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+h2{
+    color: #306540;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    margin-left: 15%;
+}
+h3{
+    border-left: 4px solid rgba(0, 0, 255, 0.763);
+    padding-left: 10px;
+    color: rgba(0, 0, 255, 0.763);
+    margin-left: 15%;
+    margin-top: 2%;
+}
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+img {
+    max-width: 15%;
+    max-height: 15%;
+    height: auto; 
+}
+td{
+    padding-bottom: 5%;
+    text-align: center;
+    font-size: large;
+    /*color: #336a43;*/
+}
+.table2{
+    border-collapse: collapse;
+    width: 100%;
+}
+.table2 th, .table2 td {
+    border: 0.1em solid #337250;
+    text-align: left;
+    padding: 2%;
+    background-color: #30654024;
+}
+.table2 th {
+    background-color: #578959;
+    color: white;
+}
+.video-container {
+    display: flex;
+    justify-content: center;
+    margin-left: 15%;
+    align-items: center;
+    position: relative;
+    width: 70%;
+    padding-bottom: 40%; /* 16:9 aspect ratio (height/width * 100) */
+    overflow: hidden;
+}
+
+.responsive-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.correct {
+    color: green;
+}
+
+.incorrect {
+    color: red;
+}
+.question p {
+    text-align: left;
+    font-size: large;
+    margin-bottom: 1%;
+}
+.quiz-container {
+    max-width: 90%;
+    margin: 1em auto;
+    padding: 2%; 
+    border: 0.1em solid #ffffff;
+    border-radius: 0.3em;
+}
+.question {
+    margin-bottom: 1.5em;
+}
+.option {
+    margin-bottom: 1em;
+    margin-left: 15%;
+}
+#submit{
+    margin-left: 15%;
+    margin-bottom: 2%;
+}
+/* Footer Setting */
+footer {
+    background-color: #242121;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    height: 10%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+  }
+/*-----------------------------------*/
+/*comment setting*/
+.comment-section {
+    max-width: 80%;
+    margin: 2.5% auto;
+    padding: 2.5%;
+    background-color: #fff;
+    border-radius: 5px;
+  }
+  
+  #comment {
+    margin: 2.5% 0;
+    width: 95%; 
+    height: 10%;
+    padding: 2.5%; 
+  }
+  
+  #name,
+  #email,
+  #website {
+    padding: 2.5%;
+    margin-right: 2.5%; 
+    display: inline-block; 
+  }
+  
+  #comment-form button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 2.5% 5%;
+    margin-top: 5%;
+  }
+/*-------Aside(QuickLink)---------*/
+aside {
+    background-color: #f2f2f2;
+    padding: 2.5%;
+    border-radius: 5px;
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    left: calc(100% + 2.5%);
+    width: 20%;
+    margin-left: 5%;
+    transition: left 0.3s ease;
+  }
+  
+  aside ul {
+    padding: 0;
+    margin: 0;
+  }
+  
+  aside ul li {
+    margin-bottom: 3%;
+    list-style: none;
+  }
+  
+  aside ul li a {
+    display: block;
+    text-decoration: none;
+    color: #333;
+    padding: 3% 6%;
+    border-radius: 1vw;
+    background-color: #ddd;
+    transition: background-color 0.3s ease;
+  }
+  
+  aside ul li a:hover {
+    background-color: #bbb;
+  }
+  
+  .scrolled aside {
+    left: calc(100% - 22.5%);
+  }
+  
+  .slide-out {
+    left: 0;
+  }
+  
+  .slide-down {
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+  }
+  
+  button#toggleAside {
+    position: fixed;
+    top: 3%;
+    right: 3%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 1.5% 3%;
+    font-size: 1.5vw;
+    border-radius: 1vw;
+    cursor: pointer;
+    z-index: 999;
+    transition: top 0.3s ease;
+  }
+  
+  button#toggleAside:hover {
+    background-color: #0056b3;
+  }
+  
+/*desktop screens */
+@media only screen and (min-width: 1024px) {
+    /* Adjust the layout for larger screens */
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+    
+
+}
+
+/* Add CSS rules for tablets and smaller desktop screens */
+@media only screen and (max-width: 1023px) {
+    /* Adjust the layout for smaller screens */
+    .container {
+        width: 90%;
+        margin: auto;
+    }
+    
+}
+
+/* mobile devices */
+@media only screen and (max-width: 767px) {
+    /* Adjust the layout for mobile screens */
+    .container {
+        width: 95%;
+        margin: auto;
+    }
+    .table2 th, .table2 td{
+        font-size: smaller;
+    }
+    .container p{
+        font-size: smaller;
+    }
+    h2, h3, span{
+        font-size: smaller;
+    }
+}
+@media only screen and (max-width: 1023px) {
+    aside {
+        width: 30%;
+        margin-left: 2.5%;
+        left: calc(100% + 2.5%);
+    }
+  
+    .scrolled aside {
+        left: calc(100% - 32.5%);
+    }
+  
+    aside ul li a {
+        padding: 2% 4%;
+        font-size: 2vw;
+    }
+  }
+  
+  @media only screen and (max-width: 767px) {
+    aside {
+        width: 80%;
+        margin-left: 5%;
+        left: calc(100% + 5%);
+    }
+  
+    .scrolled aside {
+        left: calc(100% - 85%);
+    }
+  
+    aside ul li a {
+        padding: 1.5% 3%;
+        font-size: 3vw;
+    }
+  }
